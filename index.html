@@ -2,39 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Resume</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1 class="name">Your Name</h1>
-    <p class="title">Web Developer | Designer</p>
 
-    <section>
+  <div class="resume-container">
+    <header>
+      <h1>My Name</h1>
+      <p class="subtitle">Web Developer • Designer • etc</p>
+    </header>
+
+    <section class="about">
       <h2>About Me</h2>
       <p>
-        I’m a passionate developer with experience in 
-        <span class="tooltip" data-tooltip="Building websites with HTML, CSS, and JavaScript">
-          frontend development
-        </span>
-        and backend systems.
+        I build <span class="tooltip" data-tooltip="Modern, responsive websites">websites</span> and
+        develop <span class="tooltip" data-tooltip="Interactive web apps using JavaScript">web apps</span>.
       </p>
     </section>
 
-    <section>
+    <section class="skills">
       <h2>Skills</h2>
       <ul>
-        <li><span class="tooltip" data-tooltip="HTML5 for structured web pages">HTML</span></li>
-        <li><span class="tooltip" data-tooltip="CSS3 for styling and layouts">CSS</span></li>
-        <li><span class="tooltip" data-tooltip="JavaScript for interactivity">JavaScript</span></li>
+        <li><span class="tooltip" data-tooltip="Markup and structure">HTML</span></li>
+        <li><span class="tooltip" data-tooltip="Style and layout">CSS</span></li>
+        <li><span class="tooltip" data-tooltip="Logic and interactivity">JavaScript</span></li>
+        <!-- more skills -->
       </ul>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: youremail@example.com</p>
+    <section class="experience">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Software Engineer — Company XYZ</h3>
+        <p>Worked on <span class="tooltip" data-tooltip="Front-end using React">front-end</span> and
+          <span class="tooltip" data-tooltip="Backend APIs, databases">back-end</span> development.</p>
+      </div>
+      <!-- more jobs -->
     </section>
+
+    <footer>
+      <p>Contact: youremail@example.com</p>
+    </footer>
   </div>
 
   <script src="script.js"></script>
